@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ME</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/script1.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+    <section class="home">
+        <div class="heading">Indra Deepika<i style="float:right;padding:10px;"class="fas fa-seedling"></i><i style="float:left;padding:10px;"class="fas fa-seedling"></i></div>
+
+
+        <hr>
+        <div id="navbar">
+            <a id="homenav" onmouseover="hovering(this)" onmouseout="hoveroff(this)" class="active" href="#home">Home</a>
+            <a id="aboutme" onmouseover="hovering(this)" onmouseout="hoveroff(this)" href="./about.html">About Me</a>
+            <a id="contacts" onmouseover="hovering(this)" onmouseout="hoveroff(this)" href="./gallery.html">Gallery</a>
+            <a id="contacts" onmouseover="hovering(this)" onmouseout="hoveroff(this)" href="./contact.html">Contact</a>
+        </div>
+        <hr>
+
+        <div>
+            <img class="imgl" src="../img/img3.jpg">
+            <img class="imgr" src="../img/img3.jpg">
+
+            <!--<img class="imgr" src="https://unsplash.com/photos/H9Kp4LIGqqo">-->
+
+            <div class="intro">
+                <div><br><br><br><br>Hi there! I am Indra Deepika Evuri<br>
+                    I am a CSE undergrad at IIITH <br><br>This is my first website hope you like it !<br><i class="fas fa-cannabis"></i><br><br><br><br><br>
+                    <br><br><br>
+                    <br<br><br><br>
+
+
+                    <div id="social">
+                    <a href="https://www.facebook.com/indradeepika.evuri.7/" class="fab fa-facebook fa-2x"></a>
+                    <a href="https://www.instagram.com/indra_deepika" class="fab fa-instagram fa-2x "></a>
+                    <a href="https://github.com/indra-deepika" class="fab fa-github fa-2x"></a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

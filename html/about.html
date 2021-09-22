@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="../js/script1.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>     <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body class="about">
+    <hr>
+    <div id="navbar">
+        <a id="homenav" onmouseover="hovering(this)" onmouseout="hoveroff(this)" class="active" href="./index.html">Home</a>
+        <a id="aboutme" onmouseover="hovering(this)" onmouseout="hoveroff(this)" href="./about.html">About Me</a>
+        <a id="contacts" onmouseover="hovering(this)" onmouseout="hoveroff(this)" href="./gallery.html">Gallery</a>
+        <a id="contacts" onmouseover="hovering(this)" onmouseout="hoveroff(this)" href="./contact.html">Contact</a>
+    </div>
+    </div>
+    <hr>
+
+
+
+    <h1>ABOUT ME</h1>
+
+    <img class="profile" src="../img/profile.jpg">
+
+    <div class="jumbotron">
+        I am Indra Deepika Evuri and I am a CSE freshman at
+        <a class="iiith" href="https://www.iiit.ac.in/">
+            Internationl Institute of Infromation Technology , Hyderabad. </a>
+        I completed my schooling from <a class="fiitjee" href="http://www.fiitjeehyderabad.com/"> 
+            FIITJEE, Hyderabad. </a> I love sleeping,listening to music,reading novels etc. I love reading and below are some of my all time favourites books.
+
+    </div>
+
+
+    <i class="fas fa-book-reader"></i>
+    <table class="books" >        
+        <tr>
+            <th colspan="4">BOOKS</th>
+        </tr>
+        <tr>
+            <th>Author</th>
+            <th colspan="3">Name</th>
+        </tr>
+        <tr>
+            <td >J.K.Rowling</td>
+            <td colspan="3">Harry Potter</td>
+        </tr>
+        <tr>
+            <td >Rick Rordian</td>
+            <td colspan="1">Percy Jackson</td>
+            <td colspan="1">Heroes Of Olympus</td>
+            <td colspan="1">Kane Chronicles</td>
+        </tr>
+        <tr>
+            <td >Suzanne Collins</td>
+            <td colspan="3">Hunger Games</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Dan Brown</td>
+            <td colspan="3">Angels and Demons</td>
+        </tr>
+        <tr>
+         <td colspan="4">The DaVinci Code</td>
+        </tr>
+
+    </table>
+    <br>
+
+
+
+    <img id="yy" src="../img/1.jpg" onclick="myimage()">
+    <br><br>
+
+   <p id="sen"> click on the picture :)</p>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
